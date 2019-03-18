@@ -6,7 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './Components/home/home.component';
-// import { SearchComponent } from './Components/search/search.component';
+ import { SearchComponent } from './Components/search/search.component';
 import { ArtistaComponent } from './Components/artista/artista.component';
 import { NavbarComponent } from './Components/shared/navbar/navbar.component';
 
@@ -21,7 +21,7 @@ import { ROUTES } from './app.routes';
   declarations: [
     AppComponent,
     HomeComponent,
-    // SearchComponent,
+    SearchComponent,
     ArtistaComponent,
     NavbarComponent
   ],
