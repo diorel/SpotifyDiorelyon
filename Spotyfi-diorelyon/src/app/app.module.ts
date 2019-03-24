@@ -14,7 +14,9 @@ import { NavbarComponent } from './Components/shared/navbar/navbar.component';
 // Importar rutas
 import { ROUTES } from './app.routes';
 // services
+import { SpotifyService } from './services/spotify.service';
 // import { SpotityService } from './services/spotity.service';
+
 
 
 @NgModule({
@@ -31,7 +33,7 @@ import { ROUTES } from './app.routes';
     RouterModule.forRoot(ROUTES, { useHash: true } )
   ],
   providers: [
-    // SpotityService
+    SpotifyService
   ],
   bootstrap: [AppComponent]
 })
