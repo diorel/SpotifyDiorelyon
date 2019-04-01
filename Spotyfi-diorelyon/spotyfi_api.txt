@@ -1,0 +1,33 @@
+--- liga obtener token spotyfi
+https://accounts.spotify.com/api/token
+
+grant_type   -- grant_type
+
+client_id  -- 7b47c4dafa5e486cb0833ff73db318d7
+
+client_secret -- 4877fc0f70d54c44b042376fa1fb29b3
+
+--- liga obtener canciones spotyfi
+
+https://api.spotify.com/v1/browse/new-releases
+
+Content-Type   ----   application/x-www-form-urlencoded
+
+Authorization  ----   Bearer BQCyqMpKJgp_-MPz-c6WLewyub3GRH3EsNXokm0DlgIfgpQYEw4DX6UR2eeBKRjJWO3gdRZccGzvp8oa-14
+
+---api key spotyfi
+
+https://developer.spotify.com/dashboard/applications/7b47c4dafa5e486cb0833ff73db318d7 
+
+--- documentacion spotyfi
+
+https://developer.spotify.com/console/get-new-releases/?country=&limit=20&offset=
+
+
+
+
+
+
+
+
+

@@ -14,13 +14,17 @@ export class SpotifyService {
    getNewReleases() {
 
     const headers = new HttpHeaders({
-      'Authorization': 'Bearer BQCyqMpKJgp_-MPz-c6WLewyub3GRH3EsNXokm0DlgIfgpQYEw4DX6UR2eeBKRjJWO3gdRZccGzvp8oa-14'
+      'Authorization': 'Bearer BQAd_1Dq1slgaEgjqllaEDOKYWwmgF_vKT7hOFZYoYwiw31j3psr7bkQ9VPbkJkNI_R8hO-oHl-51tNFkg8'
     }); 
 
-     this.http.get('https://api.spotify.com/v1/browse/new-releases', { headers })
-     .subscribe( data => {
-       console.log(data);
-     });
+  
+     return this.http.get('https://api.spotify.com/v1/browse/new-releases', { headers });
+
+       //  this.http.get('https://api.spotify.com/v1/browse/new-releases', { headers })
+    //  .subscribe( data => {
+    //    console.log(data);
+    //  });
+
 
    }
 
