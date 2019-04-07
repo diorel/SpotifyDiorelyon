@@ -14,18 +14,18 @@ export class SpotifyService {
    getNewReleases() {
 
     const headers = new HttpHeaders({
-      'Authorization': 'Bearer BQAd_1Dq1slgaEgjqllaEDOKYWwmgF_vKT7hOFZYoYwiw31j3psr7bkQ9VPbkJkNI_R8hO-oHl-51tNFkg8'
-    }); 
-
-  
+      'Authorization': 'Bearer BQD1XTcxQroEbHONS-DzjQFh7ixFt6th922UrAzIIIoKKJb_qP1HfXg_MO1uwGWRpCyeNGdg8zttLyYoJts'
+    });   
      return this.http.get('https://api.spotify.com/v1/browse/new-releases', { headers });
+   }
 
-       //  this.http.get('https://api.spotify.com/v1/browse/new-releases', { headers })
-    //  .subscribe( data => {
-    //    console.log(data);
-    //  });
+   getArtista( termino: string ) {
 
-
+    const headers = new HttpHeaders({
+      'Authorization': 'Bearer BQD1XTcxQroEbHONS-DzjQFh7ixFt6th922UrAzIIIoKKJb_qP1HfXg_MO1uwGWRpCyeNGdg8zttLyYoJts'
+    });   
+      return this.http.get(`https://api.spotify.com/v1/search?q=${ termino }&type=artist&limit=15`, { headers });
+    // return this.http.get('https://api.spotify.com/v1/search?q=maluma&type=artist&limit=15', { headers });
    }
 
 
