@@ -5,16 +5,22 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './Components/home/home.component';
- import { SearchComponent } from './Components/search/search.component';
-import { ArtistaComponent } from './Components/artista/artista.component';
-import { NavbarComponent } from './Components/shared/navbar/navbar.component';
+import { HomeComponent } from './components/home/home.component';
+import { SearchComponent } from './components/search/search.component';
+import { ArtistaComponent } from './components/artista/artista.component';
+import { NavbarComponent } from './components/shared/navbar/navbar.component';
 
 
 // Importar rutas
 import { ROUTES } from './app.routes';
+//Pipes
+
+import { NoimagePipe } from './pipes/noimage.pipe';
+
 // services
 import { SpotifyService } from './services/spotify.service';
+import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
+import { LoadingComponent } from './components/shared/loading/loading.component';
 // import { SpotityService } from './services/spotity.service';
 
 
@@ -25,7 +31,10 @@ import { SpotifyService } from './services/spotify.service';
     HomeComponent,
     SearchComponent,
     ArtistaComponent,
-    NavbarComponent
+    NavbarComponent,
+    NoimagePipe,
+    TarjetasComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
